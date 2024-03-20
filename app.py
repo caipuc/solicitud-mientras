@@ -1,13 +1,9 @@
-from flask import Flask
+# Aquí importa tus módulos y librerías necesarias
 
-# Crear una instancia de la aplicación Flask
-app = Flask(__name__)
+def main():
+    # Aquí puedes escribir la lógica principal de tu aplicación
+    print("Hola, Render!")
 
-# Definir rutas y funcionalidades de la aplicación
-@app.route('/')
-def index():
-    return 'Hello, World!'
+if __name__ == "__main__":
+    main()
 
-# Si se ejecuta este archivo directamente, arrancar el servidor de desarrollo
-if __name__ == '__main__':
-    app.run(debug=True)
